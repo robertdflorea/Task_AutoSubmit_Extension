@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AutoSubmit Scheduler</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AutoSubmit Scheduler</h1>
+
+    <!-- Countdown -->
+    <div class="section">
+      <span class="section-label">Click in</span>
+      <div class="time-inputs">
+        <div class="time-group">
+          <input type="number" id="count-h" min="0" max="23" value="0">
+          <span class="unit">h</span>
+        </div>
+        <div class="time-group">
+          <input type="number" id="count-m" min="0" max="59" value="0">
+          <span class="unit">m</span>
+        </div>
+        <div class="time-group">
+          <input type="number" id="count-s" min="0" max="59" value="10">
+          <span class="unit">s</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Selection -->
+    <div class="section">
+      <span class="section-label">Action</span>
+      <div class="action-buttons">
+        <button id="btn-action-submit" class="action-btn">Submit</button>
+        <button id="btn-action-pause" class="action-btn active">Pause</button>
+      </div>
+    </div>
+
+    <!-- Target URL -->
+    <div class="section">
+      <span class="section-label">Target tab</span>
+      <div id="tab-url" class="tab-url">Loading...</div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="btn-set" class="btn-primary">Set Timer</button>
+      <button id="btn-cancel" class="btn-secondary">Cancel</button>
+    </div>
+
+    <!-- Status -->
+    <div id="status-section" class="status-section" style="display:none">
+      <div id="status-text" class="status-text"></div>
+      <div id="status-countdown" class="status-countdown"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

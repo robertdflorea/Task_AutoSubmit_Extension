@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "AutoSubmit Scheduler",
+  "version": "1.0.0",
+  "description": "Automatically clicks Submit or Pause at a scheduled time",
+  "permissions": [
+    "alarms",
+    "storage",
+    "tabs",
+    "scripting",
+    "notifications",
+    "windows"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AutoSubmit Scheduler"
+  }
+}
