@@ -8,6 +8,7 @@ async function clickButtonOnPage(action) {
     'input[type="button"]',
     'input[type="submit"]'
   ];
+  
 
   // Find a clickable element whose visible text matches one of the given terms
   function findButton(terms, root = document, exclude = null) {

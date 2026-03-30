@@ -162,5 +162,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     return h > 0
       ? `${h}:${pad(m)}:${pad(s)}`
       : `${pad(m)}:${pad(s)}`;
+      
   }
 });

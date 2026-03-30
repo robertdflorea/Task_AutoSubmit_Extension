@@ -10,6 +10,7 @@
     "scripting",
     "notifications",
     "windows"
+    
   ],
   "host_permissions": ["<all_urls>"],
   "background": {
